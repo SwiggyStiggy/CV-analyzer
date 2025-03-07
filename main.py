@@ -9,15 +9,15 @@ from PyQt6.QtCore import Qt
 try:
     import fitz  
 except ImportError:
-    raise ImportError("Please install PyMuPDF using 'pip install PyMuPDF'")
+    raise ImportError
 try:
     import docx 
 except ImportError:
-    raise ImportError("Please install python-docx using 'pip install python-docx'")
+    raise ImportError
 try:
     from fpdf import FPDF 
 except ImportError:
-    raise ImportError("Please install fpdf using 'pip install fpdf'")
+    raise ImportError
 
 #API key
 dotenv.load_dotenv()
